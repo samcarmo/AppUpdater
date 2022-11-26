@@ -39,6 +39,7 @@ public class WingetDAO {
             }
         } catch (IOException ex) {
             Logger.getLogger(WingetDAO.class.getName()).log(Level.SEVERE, null, ex);
+            info = "Error";
         }
     }
 

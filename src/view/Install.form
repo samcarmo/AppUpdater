@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="true"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="lblInstall" max="32767" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Component id="btnInstallApp" min="-2" pref="119" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="btnBack" min="-2" pref="119" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+                                  <Component id="btnClsSelection" min="-2" pref="119" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="btnSelectAll" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="chkDbeaver" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="chkGimp" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="chkGit" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="chkGChrome" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="chkEpicGames" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="chk7zip" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="chkGoogleDrive" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="chkMpc" min="-2" max="-2" attributes="0"/>
+                                  <Component id="chkOneDrive" min="-2" max="-2" attributes="0"/>
+                                  <Component id="chkOBSProject" min="-2" max="-2" attributes="0"/>
+                                  <Component id="chkPython310" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="chkQBittorrent" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="chkSteam" min="-2" max="-2" attributes="0"/>
+                                  <Component id="chkNotepad" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="0" pref="7" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="lblInstall" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="chk7zip" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="chkNotepad" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="chkDbeaver" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="chkOBSProject" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="chkEpicGames" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="chkOneDrive" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="chkGimp" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="chkPython310" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="chkGit" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="chkQBittorrent" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="chkGChrome" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="chkSteam" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="chkGoogleDrive" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="chkMpc" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="btnClsSelection" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnSelectAll" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="btnBack" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnInstallApp" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JCheckBox" name="chk7zip">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="7zip"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblInstall">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" value="0"/>
+        <Property name="text" type="java.lang.String" value="Selecione os programas que deseja instalar"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="chkDbeaver">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="DBeaver"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="chkGimp">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Gimp"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="chkGit">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Git"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="chkGChrome">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Google Chrome"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="chkNotepad">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Notepad++"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="chkOBSProject">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="OBSProject"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="chkOneDrive">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="OneDrive"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="chkSteam">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Steam"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="chkQBittorrent">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="qBittorrent"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="chkEpicGames">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="EpicGames"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="chkPython310">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Python 3.10"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="chkGoogleDrive">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Google Drive"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnClsSelection">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Limpar Sele&#xe7;&#xe3;o"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnClsSelectionActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnSelectAll">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Selecionar Todos"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSelectAllActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnInstallApp">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Instalar"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnInstallAppActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnBack">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Voltar"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnBackActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="chkMpc">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Media Player Classic"/>
+      </Properties>
+    </Component>
+  </SubComponents>
+</Form>
