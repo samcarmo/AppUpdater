@@ -1,6 +1,6 @@
 {
 	"$schema" : "https://aka.ms/winget-packages.schema.2.0.json",
-	"CreationDate" : "2022-11-26T11:16:35.566-00:00",
+	"CreationDate" : "2022-11-27T14:36:29.216-00:00",
 	"Sources" : 
 	[
 		{
@@ -43,6 +43,9 @@
 					"PackageIdentifier" : "Opera.OperaGX"
 				},
 				{
+					"PackageIdentifier" : "Postman.Postman"
+				},
+				{
 					"PackageIdentifier" : "Valve.Steam"
 				},
 				{
@@ -56,6 +59,9 @@
 				},
 				{
 					"PackageIdentifier" : "EpicGames.EpicGamesLauncher"
+				},
+				{
+					"PackageIdentifier" : "Oracle.JavaRuntimeEnvironment"
 				},
 				{
 					"PackageIdentifier" : "Oracle.JavaRuntimeEnvironment"

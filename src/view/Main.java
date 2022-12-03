@@ -4,8 +4,11 @@
  */
 package view;
 
+import java.awt.Dimension;
+import java.io.File;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JFileChooser;
 import model.dao.WingetDAO;
 
 /**
@@ -164,35 +167,26 @@ public class Main extends javax.swing.JFrame {
 
     private void btnUpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUpdateActionPerformed
         try {
-            info = "Atualizando Programas";
-            receiveInfo(info);
             wingetDao.getUpdate();
+            lblInfo.setText(wingetDao.info);
         } catch (Exception ex) {
             Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_btnUpdateActionPerformed
 
-    private void btnOutdatedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOutdatedActionPerformed
-        try {
-            info = "Procurando Programas Desatualizados";
-            receiveInfo(info);
-            wingetDao.getOutdated();
-        } catch (Exception ex) {
-            Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }//GEN-LAST:event_btnOutdatedActionPerformed
-
     private void btnExportActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExportActionPerformed
-        try {
-            info = "Exportando Lista de Programas";
-            receiveInfo(info);
-            wingetDao.getAppList();
-            info = "Lista de Programas Exportado";
-        } catch (Exception ex) {
-            Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
-            info = "Erro ao exportar lista de programas"; 
-        }
-        receiveInfo(info);
+        new Thread() {
+
+            @Override
+            public void run() {
+                try {
+                    wingetDao.getAppList();
+                    lblInfo.setText(wingetDao.info);
+                } catch (Exception ex) {
+                    Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+                }
+            }
+        }.start();
     }//GEN-LAST:event_btnExportActionPerformed
 
     private void btnCloseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCloseActionPerformed
@@ -206,7 +200,18 @@ public class Main extends javax.swing.JFrame {
     }//GEN-LAST:event_btnAboutActionPerformed
 
     private void btnImportActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnImportActionPerformed
-        // TODO add your handling code here:
+        JFileChooser fc = new JFileChooser();
+        fc.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);
+        int res = fc.showOpenDialog(null);
+        if (res == JFileChooser.APPROVE_OPTION) {
+            File file = fc.getSelectedFile();
+            String path = file.getAbsolutePath();
+            try {
+                wingetDao.importAppList(path);
+            } catch (Exception ex) {
+                Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
     }//GEN-LAST:event_btnImportActionPerformed
 
     private void btnInstallActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInstallActionPerformed
@@ -214,6 +219,24 @@ public class Main extends javax.swing.JFrame {
         install.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnInstallActionPerformed
+
+    private void btnOutdatedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOutdatedActionPerformed
+        new Thread() {
+
+            @Override
+            public void run() {
+
+                try {
+                    wingetDao.getOutdated();
+                    lblInfo.setText(wingetDao.info);
+                } catch (Exception ex) {
+                    Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
+                }
+
+            }
+        }.start();
+
+    }//GEN-LAST:event_btnOutdatedActionPerformed
 
     public void receiveInfo(String info) {
         lblInfo.setText(info);

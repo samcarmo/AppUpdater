@@ -44,7 +44,7 @@ public class WingetDAO {
     }
 
     public String getUpdate() throws Exception {
-        command = "winget upgrade all";
+        command = "winget upgrade --all";
         this.runCommand(command);
         return info;
     }
@@ -57,6 +57,12 @@ public class WingetDAO {
 
     public String getAppList() throws Exception {
         command = "winget export -o apps.json";
+        this.runCommand(command);
+        return info;
+    }
+
+    public String importAppList(String fileName) throws Exception {
+        command = "winget import ".concat(fileName);
         this.runCommand(command);
         return info;
     }
